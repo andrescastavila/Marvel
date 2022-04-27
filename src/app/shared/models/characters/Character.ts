@@ -16,7 +16,7 @@ export interface CharacterDataContainer{
     limit:number;
     total:number;
     count:number;
-    results: [Character];
+    results: Character[];
 }
 
 export interface CharacterDataWrapper{
@@ -43,7 +43,7 @@ export interface SeriesList{
     available:number;
     returned:number;
     collectionURI:string;
-    items:[SeriesSummary];
+    items:SeriesSummary[];
 }
 
 export interface Image{
