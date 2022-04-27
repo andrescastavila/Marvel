@@ -1,12 +1,3 @@
-import {TextObject} from './textObject';
-import { Url } from './url';
-import { SeriesSummary } from './seriesSummary';
-import { ComicSummary } from './comicSummary';
-import { ComicDate } from './comicDate';
-import { ComicPrice } from './comicPrice';
-import { Image } from './image';
-import { CreatorList } from './creatorList';
-import { CharacterList } from './characterList';
 
 export interface Comic{
     id : number;
@@ -37,4 +28,85 @@ export interface Comic{
     creators : CreatorList;
     characters : CharacterList;
     
+    }
+
+    export interface ComicDataWrapper{
+        code : number;
+        status : string;
+        copyright : string;
+        attributionText : string;
+        attributionHTML : string;
+        data : ComicDataContainer;
+        etag : string;
+    } 
+
+    export interface ComicDataContainer{
+        offset : number;
+        limit : number;
+        total : number;
+        count : number;
+        results : Comic[];
+    }
+
+    export interface TextObject{
+        type : string;
+        language : string;
+        text : string;
+    
+    }
+
+    export interface Url{
+        type : string;
+        url : string;
+    }
+
+    export interface SeriesSummary{
+        resourceURI : string;
+        name : string;
+    }
+
+    export interface ComicSummary{
+        resourceURI : string
+        name : string
+    }
+
+    export interface ComicDate{
+        type : string;
+        date : Date;
+    }
+
+    export interface ComicPrice{
+        type : string;
+        price : number;
+    }
+
+    export interface Image{
+        path : string
+        extension : string
+    }
+
+    export interface CreatorList{
+        available : number;
+        returned : number;
+        collectionURI : string;
+        items : CreatorSummary[];
+    }
+
+    export interface CreatorSummary{
+        resourceURI : string;
+        name : string
+        role : string
+    }
+
+    export interface CharacterList{
+        available : number;
+        returned : number;
+        collectionURI : string
+        items : CharacterSummary[];
+    }
+
+    export interface CharacterSummary{
+        resourceURI : string
+        name : string
+        role : string
     }
