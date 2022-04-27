@@ -4,5 +4,5 @@ export interface ComicList{
     available:number;
     returned:number;
     collectionURI:string;
-    items:[ComicSummary];
+    items:ComicSummary[];
 }
