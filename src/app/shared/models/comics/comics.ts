@@ -1,4 +1,6 @@
-
+import { Url } from "../common/common"; 
+import { SeriesSummary } from "../common/common";
+import { Image } from "../common/common";
 export interface Comic{
     id : number;
     digitalId : number;
@@ -55,15 +57,6 @@ export interface Comic{
     
     }
 
-    export interface Url{
-        type : string;
-        url : string;
-    }
-
-    export interface SeriesSummary{
-        resourceURI : string;
-        name : string;
-    }
 
     export interface ComicSummary{
         resourceURI : string
@@ -78,11 +71,6 @@ export interface Comic{
     export interface ComicPrice{
         type : string;
         price : number;
-    }
-
-    export interface Image{
-        path : string
-        extension : string
     }
 
     export interface CreatorList{
