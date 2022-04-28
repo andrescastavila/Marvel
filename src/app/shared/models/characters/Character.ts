@@ -1,6 +1,4 @@
-import { Url } from "../common/common"; 
-import { SeriesSummary } from "../common/common";
-import { Image } from "../common/common";
+import { Url,SeriesSummary,Image } from "../common/common"; 
 
 export interface Character{
     id:number;
