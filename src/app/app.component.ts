@@ -15,7 +15,7 @@ export class AppComponent implements OnInit{
 
   ngOnInit():void{
     this.service.getCharacters().subscribe(resp => {
-      this.characters = resp.results;
+      this.characters = resp;
       console.log(this.characters);
     })
   }
