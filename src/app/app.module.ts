@@ -7,6 +7,7 @@ import { CharactersComponent } from './characters/characters.component';
 import { SeriesComponent } from './series/series.component';
 import { ComicsComponent } from './comics/comics.component';
 import { MaterialModule } from './material.module';
+import { CharactersService } from './shared/services/characters.service';
 
    
 
@@ -25,7 +26,9 @@ import { MaterialModule } from './material.module';
     MaterialModule
     
   ],
-  providers: [],
+  providers: [
+    CharactersService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
