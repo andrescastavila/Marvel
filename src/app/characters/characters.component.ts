@@ -13,18 +13,14 @@ import { Observable,of } from 'rxjs';
 })
 export class CharactersComponent implements OnInit {
 
-  // characters: Character[]=[];
 
-  public characters:Character[] = [];
+  
 
-  constructor(private characterService:CharactersService) { }
+  constructor() { }
 
 
   ngOnInit(): void {
-    this.characterService.getCharacters()
-    .subscribe(res=>{
-      this.characters=res;
-    });
+    
   }
 
 
