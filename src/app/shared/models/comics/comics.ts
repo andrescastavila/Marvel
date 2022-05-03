@@ -1,4 +1,4 @@
-import { Url,SeriesSummary,Image } from "../common/common"; 
+import { Url,SeriesSummary,Image,ComicSummary,CharacterSummary,CharacterList } from "../common/common"; 
 
 export interface Comic{
     id : number;
@@ -57,11 +57,6 @@ export interface Comic{
     }
 
 
-    export interface ComicSummary{
-        resourceURI : string
-        name : string
-    }
-
     export interface ComicDate{
         type : string;
         date : Date;
@@ -85,15 +80,4 @@ export interface Comic{
         role : string
     }
 
-    export interface CharacterList{
-        available : number;
-        returned : number;
-        collectionURI : string
-        items : CharacterSummary[];
-    }
-
-    export interface CharacterSummary{
-        resourceURI : string
-        name : string
-        role : string
-    }
+    
