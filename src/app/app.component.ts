@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CharactersService } from './shared/services/characters.service';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,16 +10,16 @@ import { CharactersService } from './shared/services/characters.service';
 export class AppComponent implements OnInit{
   title = 'MarvelApp';
   characters: any = {};
-  constructor(private service: CharactersService ){
+  constructor(private service: CharactersService,  ){
 
   }
 
-  ngOnInit():void{
+   ngOnInit():void{
     this.service.getCharacters().subscribe(resp => {
-      this.characters = resp;
-      console.log(this.characters);
+       this.characters = resp;
+     console.log(this.characters);
     })
-  }
+   }
 }
 
 
