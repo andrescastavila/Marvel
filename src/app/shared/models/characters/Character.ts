@@ -1,4 +1,4 @@
-import { Url,SeriesSummary,Image } from "../common/common"; 
+import { Url,Image,ComicList,SeriesList } from "../common/common"; 
 
 export interface Character{
     id:number;
@@ -31,26 +31,7 @@ export interface CharacterDataWrapper{
     etag:string;
 }
 
-export interface SeriesList{
-    available:number;
-    returned:number;
-    collectionURI:string;
-    items:SeriesSummary[];
-}
 
-
-
-export interface ComicList{
-    available:number;
-    returned:number;
-    collectionURI:string;
-    items:ComicSummary[];
-}
-
-export interface ComicSummary{
-    resourceURI:string;
-    name:string;
-}
 
 
 
