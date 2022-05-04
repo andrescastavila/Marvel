@@ -1,9 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { CharactersService } from '../shared/services/characters.service';
-import { Character } from '../shared/models/characters/Character';
-import { Observable,of } from 'rxjs';
-
-
 
 
 @Component({
@@ -13,16 +9,26 @@ import { Observable,of } from 'rxjs';
 })
 export class CharactersComponent implements OnInit {
 
+  characters: any = {};
 
+  constructor(private service: CharactersService) { }
   
-
-  constructor() { }
-
-
   ngOnInit(): void {
-    
+   this.all();
+   this.CharacterId();
   }
+  
+   all(){
+      this.service.getCharacters().subscribe(resp => {
+        this.characters = resp;
+     })
+   }
 
-
+  CharacterId(){
+     this.service.getCharacterById(this.service.characterId)
+      .subscribe(res=>{
+     this.characters=res;
+       });
+    }
   
 }

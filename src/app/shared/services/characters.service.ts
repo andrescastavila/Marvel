@@ -24,6 +24,7 @@ export class CharactersService {
 
     return this.http.get(url).pipe(
       map((res:any)=>{
+        console.log(res.data.results);
         return res.data.results;
       })
     )
