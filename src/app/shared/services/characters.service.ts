@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable , of, from} from 'rxjs';
-import * as CryptoJS from 'crypto-js';
 import { Character } from '../models/characters/Character';
 import { map, } from 'rxjs/operators';
 import { GlobalConstants } from '../models/common/global-constants';
@@ -14,7 +13,9 @@ import { DataSource } from './datasource.service';
 })
 export class CharactersService extends DataSource{
   characterId= 1009664;
-  constructor(public http: HttpClient) { }
+  constructor(public http: HttpClient) {
+    super();
+  }
 
   public getCharacters():Observable<Character[]>{
     const url=`${GlobalConstants.apiUrl}characters?${this.getUrlParams()}`;
