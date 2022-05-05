@@ -9,7 +9,7 @@ import { CharactersService } from '../shared/services/characters.service';
 })
 export class CharactersComponent implements OnInit {
 
-  characters: any = {};
+  characters: any = [];
 
   constructor(private service: CharactersService) { }
   

@@ -9,6 +9,8 @@ import { ComicsComponent } from './comics/comics.component';
 import { MaterialModule } from './material.module';
 import { CharactersService } from './shared/services/characters.service';
 import { GlobalConstants } from './shared/models/common/global-constants';
+import { ComicsService } from './shared/services/comics.service';
+
 
    
 
@@ -29,6 +31,7 @@ import { GlobalConstants } from './shared/models/common/global-constants';
   ],
   providers: [
     CharactersService,
+    ComicsService,
     GlobalConstants
   ],
   bootstrap: [AppComponent]
