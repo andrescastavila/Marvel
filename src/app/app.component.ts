@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { CharactersService } from './shared/services/characters.service';
-import { CharactersComponent } from './characters/characters.component';
 import { Router } from '@angular/router';
 
 
@@ -19,8 +17,12 @@ import { Router } from '@angular/router';
 
 export class AppComponent {
   title = 'MarvelApp';
-
-  constructor( ){
+  links = [
+    { path: '/characters',  title: 'Characters' },
+    { path: '/comics', title: 'Comics' },
+    { path: '/series', title: 'Series' },
+  ];
+  constructor( private router : Router){
 
   }
 
