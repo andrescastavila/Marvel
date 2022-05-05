@@ -10,6 +10,8 @@ import { MaterialModule } from './material.module';
 import { CharactersService } from './shared/services/characters.service';
 import { GlobalConstants } from './shared/models/common/global-constants';
 import { SeriesService } from './shared/services/series.service';
+import { ComicsService } from './shared/services/comics.service';
+
 
    
 
@@ -31,7 +33,8 @@ import { SeriesService } from './shared/services/series.service';
   providers: [
     CharactersService,
     SeriesService,
-    GlobalConstants
+    GlobalConstants,
+    ComicsService
   ],
   bootstrap: [AppComponent]
 })
