@@ -11,6 +11,7 @@ import { CharactersService } from './shared/services/characters.service';
 import { GlobalConstants } from './shared/models/common/global-constants';
 import { SeriesService } from './shared/services/series.service';
 import { ComicsService } from './shared/services/comics.service';
+import { HeaderComponent } from './header/header.component';
 
    
 
@@ -20,6 +21,7 @@ import { ComicsService } from './shared/services/comics.service';
     CharactersComponent,
     SeriesComponent,
     ComicsComponent,
+    HeaderComponent,
     
   ],
   imports: [
