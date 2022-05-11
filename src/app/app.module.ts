@@ -12,6 +12,9 @@ import { GlobalConstants } from './shared/models/common/global-constants';
 import { SeriesService } from './shared/services/series.service';
 import { ComicsService } from './shared/services/comics.service';
 import { HeaderComponent } from './header/header.component';
+import { CharactersListComponent } from './characters-list/characters-list.component';
+import { CharactersCardComponent } from './characters-card/characters-card.component';
+import { MatGridListModule } from '@angular/material/grid-list';
 
    
 
@@ -22,13 +25,16 @@ import { HeaderComponent } from './header/header.component';
     SeriesComponent,
     ComicsComponent,
     HeaderComponent,
+    CharactersListComponent,
+    CharactersCardComponent,
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    MaterialModule
+    MaterialModule,
+    MatGridListModule
     
   ],
   providers: [

@@ -1,0 +1,34 @@
+
+<mat-grid-list cols="4"  class="card">
+    <mat-grid-tile *ngFor="let item of characters">
+    <mat-card class="container">
+        
+        <mat-card-header>
+            <img matCardImage src="{{ item.thumbnail.path }}.{{item.thumbnail.extension}}" >
+        </mat-card-header>
+        
+        <mat-card-content >
+            <mat-card-title class="title" >{{item.name }}</mat-card-title>
+            
+        </mat-card-content>
+        
+        <mat-card-footer >
+            <mat-card-subtitle class="title" >{{item.modified}}</mat-card-subtitle>
+        </mat-card-footer>
+    </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+      
+
+  <!-- <mat-list-item  class="card">
+    <mat-card >  
+     <div clas="image">
+     <img src="{{ item.thumbnail.path }}.{{item.thumbnail.extension}}" style="height: 200px">
+     </div>
+     <div class="container">
+    <h3 class="title" matLine>{{item.name }}</h3>
+    <br>
+    <p class="title" matLine>{{item.modified}}</p>
+ </div>
+ </mat-card>
+</mat-list-item> -->
