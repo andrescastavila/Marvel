@@ -9,12 +9,14 @@
 header{
     background-color: #151515;
     border-top: 1px solid;
-    width: 105%;
+    width: 110%;
+    
 	
 }
 a{
     margin-top: -8px;
     display: flex;
+    flex-wrap: wrap;
     justify-content:center;
        
 }

@@ -15,6 +15,7 @@ import { HeaderComponent } from './header/header.component';
 import { CharactersListComponent } from './characters-list/characters-list.component';
 import { CharactersCardComponent } from './characters-card/characters-card.component';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
    
 
@@ -34,7 +35,8 @@ import { MatGridListModule } from '@angular/material/grid-list';
     AppRoutingModule,
     HttpClientModule,
     MaterialModule,
-    MatGridListModule
+    MatGridListModule,
+    FlexLayoutModule
     
   ],
   providers: [

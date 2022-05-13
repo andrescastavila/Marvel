@@ -4,8 +4,8 @@
     height: 240px;
     width: 150px;
     margin-top: 50px;
-    margin-left:110px ;
-    margin-right:80px ; 
+    margin-left:20px ;
+   
    
    
 }
@@ -32,7 +32,7 @@
    
     
 }
-   
+
 
 .picture{  
     width:180px;
@@ -61,6 +61,20 @@
 .picture:hover{
     transform: scale(1.1);
     
+}
+.card:after{
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: #fff;
+    border-style: solid;
+    border-top-color: transparent;
+    border-width: 12px 12px 0 0;
+    bottom: 0;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: auto;
+    z-index: 40;
 }
 
 /* hr {
