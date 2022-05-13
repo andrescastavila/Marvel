@@ -2,6 +2,7 @@
     
     padding: 10px 5px 0px 0px;
     
+    
         
 }
 
@@ -39,3 +40,9 @@ ul {
     margin-left:0px ;
    
 }
+
+hr {
+    height: 10px;
+    width: 50%;
+    background-color: blue;
+  }

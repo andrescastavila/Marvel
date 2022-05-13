@@ -1,13 +1,16 @@
-
-<mat-grid-list cols="4"  class="card">
-    <mat-grid-tile *ngFor="let item of characters">
-    <mat-card class="container">
+<div class="container">
+<mat-grid-list cols="4"  class="grid">
+    <mat-grid-tile *ngFor="let item of characters" >
+   
+        <mat-card class="card" >
         
         <mat-card-header>
-            <img matCardImage src="{{ item.thumbnail.path }}.{{item.thumbnail.extension}}" >
+            <img class="picture" matCardImage src="{{ item.thumbnail.path }}.{{item.thumbnail.extension}}" >
+            
         </mat-card-header>
         
         <mat-card-content >
+            
             <mat-card-title class="title" >{{item.name }}</mat-card-title>
             
         </mat-card-content>
@@ -16,9 +19,10 @@
             <mat-card-subtitle class="title" >{{item.modified}}</mat-card-subtitle>
         </mat-card-footer>
     </mat-card>
+
     </mat-grid-tile>
   </mat-grid-list>
-      
+</div>  
 
   <!-- <mat-list-item  class="card">
     <mat-card >  
