@@ -18,6 +18,7 @@ a{
     display: flex;
     flex-wrap: wrap;
     justify-content:center;
+    text-align: center;
        
 }
 
@@ -28,7 +29,11 @@ ul {
     display:flex;
     justify-content:space-around;
     align-items: center;
+    padding: 0px;
   
+}
+li{
+    width: 33%;
 }
 
 .button{
@@ -38,8 +43,8 @@ ul {
     letter-spacing: 1px;
     font-weight: 700;
     text-decoration:none;
-    margin-right: 70px;
-    margin-left:0px ;
+   
+  
    
 }
 
