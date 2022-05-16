@@ -5,13 +5,12 @@
     width: 150px;
     margin-top: 50px;
     margin-left:20px ;
-   
-   
-   
+  
 }
 .card:hover{
     
     background-color: #e62429;
+    
     
 }
 
@@ -41,21 +40,6 @@
     margin-top: -15px;
     justify-content: center; 
     
-}
-
-.grid{
-    
-    display:flex;
-   
-    flex-direction: column;
-    
-    background-color: yellow;
-    
-}
-
-.only_card{
-    display:flex;
-    justify-content: center; 
 }
 
 .picture:hover{
