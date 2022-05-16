@@ -13,6 +13,8 @@ import { SeriesService } from './shared/services/series.service';
 import { ComicsService } from './shared/services/comics.service';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
+import { CharacterListComponent } from './character-list/character-list.component';
+import { CharacterCardComponent } from './character-card/character-card.component';
 
 
    
@@ -24,7 +26,9 @@ import { HeaderComponent } from './header/header.component';
     SeriesComponent,
     ComicsComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    CharacterListComponent,
+    CharacterCardComponent
   ],
   imports: [
     BrowserModule,
