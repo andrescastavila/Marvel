@@ -15,6 +15,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { CharacterListComponent } from './character-list/character-list.component';
 import { CharacterCardComponent } from './character-card/character-card.component';
+import { SearchComponent } from './search/search.component';
 
 
    
@@ -28,7 +29,8 @@ import { CharacterCardComponent } from './character-card/character-card.componen
     HeaderComponent,
     FooterComponent,
     CharacterListComponent,
-    CharacterCardComponent
+    CharacterCardComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
