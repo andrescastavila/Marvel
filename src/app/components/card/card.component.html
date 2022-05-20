@@ -1,0 +1,10 @@
+
+<div class="container">
+    <div class="card" *ngFor="let item of elements">
+            <div>
+             <img src="{{item.thumbnailUrl}}.{{item.thumbnailExtension}}">
+            <h3 class="responsive">{{item.title}}</h3>
+            <p class="responsive">{{item.modified}}</p>
+            </div>
+    </div>
+</div>

@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CharactersComponent } from './characters/characters.component';
-import { ComicsComponent } from './comics/comics.component';
-import { SeriesComponent } from './series/series.component';
+import { CharactersComponent } from './components/characters/characters.component';
+import { ComicsComponent } from './components/comics/comics.component';
+import { SeriesComponent } from './components/series/series.component';
 const routes: Routes = [
   { path: 'characters', component: CharactersComponent },
   { path: 'comics', component: ComicsComponent },
