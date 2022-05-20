@@ -5,6 +5,9 @@ import { Character } from '../models/characters/Character';
 import { map, } from 'rxjs/operators';
 import { GlobalConstants } from '../models/common/global-constants';
 import { DataSource } from './datasource.service';
+import { SearchComponent } from 'src/app/search/search.component';
+
+
 
 
 
@@ -13,12 +16,20 @@ import { DataSource } from './datasource.service';
 })
 export class CharactersService extends DataSource{
   characterId= 1009664;
-  constructor(public http: HttpClient) {
+  name= "";
+  pass:boolean=true;
+  
+  constructor(public http: HttpClient, ) {
+    
     super();
   }
-
-  public getCharacters():Observable<Character[]>{
-    const url=`${GlobalConstants.apiUrl}characters?${this.getUrlParams()}`;
+  
+  public getCharacters(name?:String):Observable<Character[]>{
+    let url=`${GlobalConstants.apiUrl}characters?`;
+    if(!!name){
+      url+=`name=${name}&`
+    }
+    url+=`${this.getUrlParams()}`;
 
     return this.http.get(url).pipe(
       map((res:any)=>{
@@ -26,6 +37,7 @@ export class CharactersService extends DataSource{
         return res.data.results;
       })
     )
+    
   }
 
   public getCharacterById(characterId : number):Observable<Character[]>{

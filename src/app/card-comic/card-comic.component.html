@@ -1,0 +1,9 @@
+<div class="container">
+    <div class="card" *ngFor="let item of comics">
+            <div>
+             <img src="{{item.thumbnail.path}}.{{item.thumbnail.extension}}">
+            <h3 class="responsive">{{item.title}}</h3>
+            <p class="responsive">{{item.modified}}</p>
+            </div>
+    </div>
+</div>

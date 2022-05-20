@@ -14,8 +14,14 @@ import { ComicsService } from './shared/services/comics.service';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { CharacterListComponent } from './character-list/character-list.component';
-import { CharacterCardComponent } from './character-card/character-card.component';
+import { CardComponent } from './card/card.component';
 import { SearchComponent } from './search/search.component';
+import { FormsModule } from '@angular/forms';
+import { ComicListComponent } from './comic-list/comic-list.component';
+import { SeriesListComponent } from './series-list/series-list.component';
+import { CardComicComponent } from './card-comic/card-comic.component';
+import { CardSeriesComponent } from './card-series/card-series.component';
+
 
 
    
@@ -29,14 +35,20 @@ import { SearchComponent } from './search/search.component';
     HeaderComponent,
     FooterComponent,
     CharacterListComponent,
-    CharacterCardComponent,
-    SearchComponent
+    CardComponent,
+    SearchComponent,
+    ComicListComponent,
+    SeriesListComponent,
+    CardComicComponent,
+    CardSeriesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule
+   
     
   ],
   providers: [

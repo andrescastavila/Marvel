@@ -2,12 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 
-//Create 3 pages
-// /characters
-// /comics
-// /series
-
-
 
 @Component({
   selector: 'app-root',
