@@ -16,10 +16,12 @@ export class ComicsService extends DataSource {
     super();
   }
 
-  public getComics():Observable<Comic[]>{
-
-    
-    const url=`${GlobalConstants.apiUrl}comics?${this.getUrlParams()}`;
+  public getComics(title?:string):Observable<Comic[]>{
+    let url=`${GlobalConstants.apiUrl}comics?`;
+    if(!!title){
+      url+=`title=${title}&`
+    }
+    url+=`${this.getUrlParams()}`;
 
     return this.http.get(url).pipe(
       map((res:any)=>{

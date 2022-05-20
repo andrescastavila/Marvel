@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ComicsService } from '../shared/services/comics.service';
+import { ComicsService } from '../../shared/services/comics.service';
 
 @Component({
   selector: 'app-comics',
@@ -9,7 +9,7 @@ import { ComicsService } from '../shared/services/comics.service';
 export class ComicsComponent implements OnInit {
   comics: any = [];
   constructor(private serviceComics: ComicsService) { }
-  
+
   ngOnInit(): void {
     this.allComics();
     this.comicById();

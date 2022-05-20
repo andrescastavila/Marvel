@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SeriesService } from '../shared/services/series.service';
+import { SeriesService } from '../../shared/services/series.service';
 
 @Component({
   selector: 'app-series',
@@ -14,9 +14,8 @@ export class SeriesComponent implements OnInit {
 
   ngOnInit(): void {
       this.all();
-      this.SeriesId();
     }
- 
+
   all(){
     this.service.getSeries().subscribe(resp => {
       this.series = resp;
@@ -31,5 +30,5 @@ export class SeriesComponent implements OnInit {
  }
 
 
-  
+
 }
